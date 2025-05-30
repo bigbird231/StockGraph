@@ -1,42 +1,64 @@
-# stockgraph
-An integrated implementation of stock graph,written by JavaScript and HTML5.
-- Graphs with 11 different time ranges for any stock supported in the Hundsun finance openapi.
-- Markets supported with China,Hongkong,Ameria.
-- Page-able scroll views containing a graph for each different range.
-- Dragging to pan and pinching to zoom are both supported.
-- Dynamically updated axis labels.
+# StockGraph
 
+A fully integrated implementation of stock K-line (candlestick) and time-series charts, built using **JavaScript** and **HTML5 (Canvas)**.
 
-## 一个完整的股票K线图实现，使用JavaScript和Html5编写，基于canvas。
+- Includes **11 different time ranges** for any stock supported by the **Hundsun Finance OpenAPI**
+- Supports markets in **China**, **Hong Kong**, and the **United States**
+- Features **scrollable views**, each displaying a different time range
+- Supports **drag-to-pan** and **pinch-to-zoom** gestures
+- **Axis labels update dynamically** during interaction
 
-> 如果想要使用仓库中提供的源代码运行，请先向HundSun购买OpenAPI的使用权限，并配置代码中的APPKEY和APPSECRET。
+> ⚠️ To run the source code provided in this repository, you must first **purchase access to the Hundsun OpenAPI** and configure your `APPKEY` and `APPSECRET` in the code.
 
-### K线类别：
-- 1分钟
-- 5分钟
-- 15分钟
-- 30分钟
-- 60分钟
-- 日K
-- 周K
-- 月K
-- 年K
+---
 
-### 分时图类别：
-- 分时
-- 五日
+## 📊 Supported Chart Types
 
-### 市场范围：
-- 中国大陆所有交易市场（包括A股、期货、中小板、文交所等）
-- 港股所有交易市场
-- 美股主要交易市场
+### K-line Charts (Candlestick Charts)
+- 1-minute
+- 5-minute
+- 15-minute
+- 30-minute
+- 60-minute
+- Daily (Day K)
+- Weekly (Week K)
+- Monthly (Month K)
+- Yearly (Year K)
 
-### 功能范围
-- 支持K线图
-- 支持分时图
-- 支持交易量图
-- 支持MA均线
-- 支持MACD技术指标
-- 基于浏览器的长按十字光标
-- 基于浏览器的左右滑动、缩放
-- 单页应用，支持股票搜索
+### Time-Series Charts
+- Intraday (Real-time)
+- 5-day Chart
+
+---
+
+## 🌏 Supported Markets
+- All **Mainland China** trading markets (including A-shares, futures, SME board, cultural exchanges, etc.)
+- All **Hong Kong** stock markets
+- Major **U.S.** stock markets
+
+---
+
+## 🔧 Features
+- K-line chart support
+- Time-series chart support
+- Trading volume chart
+- **Moving Average (MA)** indicators
+- **MACD** technical analysis
+- **Crosshair** with long-press gesture (browser-based)
+- **Pan and zoom** gestures supported via browser
+- **Single-page application** with built-in stock search
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/stockgraph.git
+2. Purchase access to the Hundsun OpenAPI and obtain your APPKEY and APPSECRET.
+3. Open the source code and configure your credentials:
+   ```
+   const APPKEY = 'your-app-key';
+   const APPSECRET = 'your-app-secret';
+   ```
+4. Open the HTML file in your browser to start using StockGraph.
