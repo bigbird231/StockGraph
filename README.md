@@ -62,3 +62,4 @@ A fully integrated implementation of stock K-line (candlestick) and time-series 
    const APPSECRET = 'your-app-secret';
    ```
 4. Open the HTML file in your browser to start using StockGraph.
+5. You can also experience the mvp demo in **Demo**
