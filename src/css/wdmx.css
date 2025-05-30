@@ -1,0 +1,176 @@
+html{
+    font-size: 100px;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix::before, .clearfix::after {
+    display:table;
+    content:"";
+    line-height:0;
+}
+
+.stockgraph_wdmx {
+    width:18%;
+    height:100%;
+    float:right;
+    /*position:relative;
+    right:0;
+    top:0;*/
+}
+
+/*--------------五档/明细按钮-------------*/
+.stockgraph_wdmx_tab {
+    height:7%;
+    line-height:0.2rem;
+    font-size: 0.2rem;
+    margin-left:0.1rem;
+}
+
+.stockgraph_wdmx_tab li{
+    float:left;
+    width:40%;
+    height:100%;
+    line-height:0.2rem;
+    text-align:center;
+}
+
+.stockgraph_wdmx_tab li:first-child{
+    margin-right:10%;
+}
+
+.stockgraph_wdmx_tab li a {
+    display:block;
+    color:#666;
+    height:20px;
+    line-height:0.2rem;
+}
+
+.stockgraph_wdmx_tab li.active a {
+    color: #4a90e2;
+    border-bottom: 1px solid #4a90e2;
+}
+
+/*-----------------五档买卖----------------*/
+.stockgraph_wd_mm {
+    margin-top: 2%;
+    font-size: 0.2rem;
+    height:91%;
+}
+
+.stockgraph_wd_mm p {
+    font-size:0.18rem;
+    line-height:0.2rem;
+    margin-bottom:3%;
+    height:18%
+}
+
+.stockgraph_wd_mm span {
+    display: block;
+    float: left;
+}
+
+.stockgraph_wd_mm span:first-child {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.stockgraph_wd_mm span:nth-child(2) {
+    text-align:center;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.stockgraph_wd_mm span:nth-child(3) {
+    width: 30%;
+    text-align: right;
+}
+
+.stockgraph_wd_mm span.z_color {
+    color: #e73146;
+}
+
+.stockgraph_wd_mm span.d_color {
+    color: #2db955;
+}
+
+.stockgraph_wd_buy {
+    position: relative;
+    height: 49%;
+}
+
+.stockgraph_wd_buy:before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e7ee;
+    transform: scaleY(0.5);
+}
+
+.stockgraph_wd_sell {
+    margin-top: 2%;
+    height:49%;
+}
+
+/*------------------明细---------------*/
+.stockgraph_wd_mx {
+    margin-top: 2%;
+    font-size: 0.2rem;
+    height:91%;
+}
+
+.stockgraph_mx_wrap{
+    position:relative;
+    height:100%;
+}
+
+.stockgraph_mx_wrap p{
+    font-size:0.18rem;
+    height:9%;
+    line-height:0.2rem;
+    margin-bottom:3%;
+}
+
+.stockgraph_wd_mx span {
+    display: block;
+    float: left;
+}
+
+.stockgraph_wd_mx span.time {
+    font-size:0.14rem;
+    color: #999;
+}
+
+.stockgraph_wd_mx span:first-child{
+    width:30%;
+    margin-right:5%;
+}
+
+.stockgraph_wd_mx span:nth-child(2) {
+    width:30%;
+    margin-left:5%;
+    text-align: center;
+}
+
+.stockgraph_wd_mx span:nth-child(3) {
+    min-width:30%;
+    text-align: right;
+    color: #666;
+}
+
+.stockgraph_wd_mx span.z_color {
+    color: #e73146;
+}
+
+.stockgraph_wd_mx span.d_color {
+    color: #2db955;
+}

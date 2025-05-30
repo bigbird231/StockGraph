@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>点客设计·股票看板</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="css-mobile/index.css" />
+    <link rel="stylesheet" type="text/css" href="css-mobile/wdmx.css" />
+    <script>
+        //适应各分辨率
+        var html = document.querySelector('html');
+        var deviceWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+</head>
+<body>
+    <h1>股票看板</h1>
+    <div class="search-wrap">
+        <input id="sg-input" placeholder="输入查询的股票代码，例如:600570.SS"/>
+        <a id="sg-submit" class="search">搜索</a>
+    </div>
+    <div id="sg-triggerwrap" class="button-wrap">
+        <a>分时</a>
+        <a>五日</a>
+        <a>1分钟</a>
+        <a>5分钟</a>
+        <a>15分钟</a>
+        <a>30分钟</a>
+        <a>60分钟</a>
+        <a>日K</a>
+        <a>周K</a>
+        <a>月K</a>
+        <a>年K</a>
+    </div>
+    <div id="k-container"></div>
+    <div class="description">
+        <h4>功能说明</h4>
+        <p>1.分时、五日为分时图，1分钟-年K均为K线图。</p>
+        <p>2.所有图形支持移动端/电脑端的左右滑动、缩放功能。</p>
+        <p>3.在图形区域长按将展示十字光标，触控移出界外十字光标消失。</p>
+        <p>4.搜索栏请输入带后缀名的股票代码，目前支持所有种类股票。</p>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/lib/base64.js"></script>
+    <script src="js/lib/hammer.js"></script>
+    <script src="js/stockgraph-mobile.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

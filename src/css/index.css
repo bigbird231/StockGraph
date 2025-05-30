@@ -1,0 +1,109 @@
+body{
+    background:
+            radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
+            radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
+            linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,
+            linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+    background-color: slategray;
+    background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+.sg-content{
+    width:1000px;
+    margin:25px auto 20px auto;
+    font-size:small;
+    background:#eee;
+    box-shadow: 5px 5px 8px rgba(0,0,0,.125),-5px -5px 8px rgba(0,0,0,.125);
+}
+
+.sg-content .sg-header{
+    height:55px;
+    line-height:55px;
+    text-align:center;
+    box-shadow: 0 2px 2px #999;
+}
+
+.sg-content .sg-header h1{
+    float:left;
+    margin-left:20px;
+    font-size:28px;
+}
+
+.sg-content .sg-header .sg-searcharea{
+    float:right;
+    margin-right:20px;
+}
+
+.sg-content .sg-header .sg-searcharea .sg-submit{
+    float:right;
+    width:70px;
+    height:34px;
+    line-height:34px;
+    margin-top:10px;
+    border-radius: 4px;
+    color:#fff;
+    background:#31b0d5;
+}
+.sg-content .sg-header .sg-searcharea .sg-submit:hover{
+    opacity:0.9;
+}
+.sg-content .sg-header .sg-searcharea .sg-submit:active{
+    background-color: #31b0d5;
+    border-color: #269abc;
+    box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.sg-content .sg-header .sg-searcharea .sg-input{
+    float:right;
+    width:300px;
+    height:29px;
+    line-height:29px;
+    margin-top:11px;
+    margin-right:5px;
+    padding:1px 8px;
+    color:#555;
+    font-size:1.1em;
+    border:1px solid #ccc;
+    border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.sg-content .sg-header .sg-searcharea .sg-input:focus{
+    border-color:#66afe9;
+    outline:0;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.sg-content .sg-triggerwrap{
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.sg-content .sg-triggerwrap a{
+    float:left;
+    width:80px;
+    height:30px;
+    line-height:30px;
+    margin-top:9px;
+    margin-left:8px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    color:#333;
+    background:#fff;
+}
+.sg-content .sg-triggerwrap a:hover{
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.sg-content .sg-triggerwrap a.active{
+    background-color: #d5d6d6;
+    border-color: #adadad;
+}
+
+.sg-content .sg-chart{
+    width:95%;
+    height:500px;
+    margin:0 auto;
+}

@@ -1,0 +1,174 @@
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+.clearfix::before, .clearfix::after {
+    display:table;
+    content:"";
+    line-height:0;
+}
+
+/*--------------父级容器-------------*/
+#k-container{
+    height: 5.56rem;
+    width: 7.5rem;
+    background: #fff;
+    position: relative;
+    margin:0 0 0 0;
+}
+
+.stockgraph_wdmx {
+    position: absolute;
+    width: 2.04rem;
+    height:5.5rem;
+    right: 0.01rem;
+    top: 0;
+}
+
+/*--------------五档/明细按钮-------------*/
+.stockgraph_wdmx_tab {
+    margin-left: 0.25rem;
+    font-size: 0.21rem;
+}
+
+.stockgraph_wdmx_tab li{
+    float: left;
+    width: 0.84rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    list-style: none;
+}
+
+.stockgraph_wdmx_tab li:first-child{
+    margin-right: 0.1rem;
+}
+
+.stockgraph_wdmx_tab li a {
+    display: block;
+    color: #666;
+    width:0.72rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-decoration: none;
+    outline: none;
+}
+
+.stockgraph_wdmx_tab li.active a {
+    color: #4a90e2;
+    border-bottom: 0.04rem solid #4a90e2;
+}
+
+/*-----------------五档买卖----------------*/
+.stockgraph_wd_mm {
+    margin-top: 0.23rem;
+}
+
+.stockgraph_wd_mm p {
+    margin-bottom: 0.2rem;
+    font-size:0.19rem;
+    line-height: 0.28rem;
+}
+
+.stockgraph_wd_mm span {
+    display: block;
+    float: left;
+}
+
+.stockgraph_wd_mm span:first-child {
+    width: 0.46rem;
+    margin-right: 0.16rem;
+}
+
+.stockgraph_wd_mm span:nth-child(2) {
+    width: 0.74rem;
+    margin-right: 0.16rem;
+}
+
+.stockgraph_wd_mm span:nth-child(3) {
+    width: 0.42rem;
+    text-align: right;
+}
+
+.stockgraph_wd_mm span.z_color {
+    color: #e73146;
+}
+
+.stockgraph_wd_mm span.d_color {
+    color: #2db955;
+}
+
+.stockgraph_wd_buy {
+    position: relative;
+    height: 2.36rem;
+}
+
+.stockgraph_wd_buy:before {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e2e7ee;
+    transform: scaleY(0.5);
+}
+
+.stockgraph_wd_sell {
+    margin-top: 0.18rem;
+}
+
+/*------------------明细---------------*/
+.stockgraph_wd_mx {
+    margin-top: 0.23rem;
+}
+
+.stockgraph_mx_wrap{
+    position:relative;
+    height: 4.8rem;
+}
+
+.stockgraph_mx_wrap p{
+    margin-bottom:0.22rem;
+    font-size: 0.19rem;
+    line-height: 0.28rem;
+}
+
+.stockgraph_wd_mx span {
+    display: block;
+    float: left;
+}
+
+.stockgraph_wd_mx span.time {
+    color: #999;
+    font-size:0.18rem;
+}
+
+.stockgraph_wd_mx span:first-child{
+    width:0.8rem;
+    margin-right:0.1rem;
+}
+
+.stockgraph_wd_mx span:nth-child(2) {
+    width: 0.6rem;
+    margin-right:0.1rem;
+    text-align: center;
+}
+
+.stockgraph_wd_mx span:nth-child(3) {
+    width: 0.34rem;
+    text-align: right;
+    color: #666;
+}
+
+.stockgraph_wd_mx span.z_color {
+    color: #e73146;
+}
+
+.stockgraph_wd_mx span.d_color {
+    color: #2db955;
+}

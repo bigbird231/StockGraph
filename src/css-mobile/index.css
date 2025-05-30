@@ -1,0 +1,44 @@
+body{
+    width:100%;
+    background:#f0f3f7;
+}
+
+h1{
+    padding-top:10px;
+    text-align:center;
+    font-size:0.25rem;
+}
+
+h4{
+    font-size:0.15rem;
+}
+
+p{
+    font-size:0.12rem;
+}
+
+input{
+    margin-left:30%;
+    width:3rem;
+    height:0.32rem;
+}
+
+button{
+    width:0.8rem;
+    height:0.4rem;
+    margin:10px 10px;
+}
+
+.search-wrap{
+    font-size:0.2rem;
+}
+
+.button-wrap{
+    font-size:0.2rem;
+}
+
+.description{
+    width:7.5rem;
+    border:dotted;
+    margin:0 auto;
+}
