@@ -1,5 +1,7 @@
 # 📈 StockGraph
 
+Try it right now: https://bigbird231.github.io/StockGraph/demo/
+
 **StockGraph** is a fully integrated implementation of stock K-line (candlestick) and time-series charts, built using **JavaScript** and **HTML5 Canvas**.
 
 - 📊 Includes **11 time ranges** for stocks supported by the **Hundsun Finance OpenAPI**
